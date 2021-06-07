@@ -6,6 +6,7 @@ abstract class AppTextStyles {
   TextStyle get loginTitle;
   TextStyle get defaultSizeText;
   TextStyle get button;
+  TextStyle get appBarFont;
 }
 
 class AppTextStylesDefault implements AppTextStyles {
@@ -26,5 +27,12 @@ class AppTextStylesDefault implements AppTextStyles {
   TextStyle get defaultSizeText => GoogleFonts.montserrat(
         fontSize: 16,
         color: Colors.black54,
+      );
+
+  @override
+  TextStyle get appBarFont => GoogleFonts.montserrat(
+        fontSize: 24,
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
       );
 }
